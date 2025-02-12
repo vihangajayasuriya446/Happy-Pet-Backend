@@ -1,6 +1,5 @@
 package com.example.happypet.dto;
 
-import jakarta.persistence.Lob;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
