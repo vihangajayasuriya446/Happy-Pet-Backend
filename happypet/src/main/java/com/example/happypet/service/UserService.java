@@ -89,4 +89,23 @@ public class UserService {
         userRepo.deleteById(userId);
         return "User successfully deleted";
     }
+
+    public List<UserDTO> getFetchedUser(String type, String age, String gender, String breed, String location) {
+        List<User> users = userRepo.findAll();
+
+        return users.stream()
+                .filter(user -> (type == null || type.isEmpty() || user.getType().equalsIgnoreCase(type)) &&
+                        (age == null || age.isEmpty() || user.getAge().equalsIgnoreCase(age)) &&
+                        (gender == null || gender.isEmpty() || user.getGender().equalsIgnoreCase(gender)) &&
+                        (breed == null || breed.isEmpty() || user.getBreed().toLowerCase().contains(breed.toLowerCase())) &&
+                        (location == null || location.isEmpty() || user.getLocation().equalsIgnoreCase(location)))
+                .map(user -> {
+                    UserDTO userDTO = modelMapper.map(user, UserDTO.class);
+                    if (user.getPhoto() != null) {
+                        userDTO.setPhoto(Base64.getEncoder().encodeToString(user.getPhoto()));
+                    }
+                    return userDTO;
+                })
+                .collect(Collectors.toList());
+    }
 }

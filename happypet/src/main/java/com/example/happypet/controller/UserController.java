@@ -50,4 +50,15 @@ public class UserController {
         userService.deleteUser(userId);
     }
 
+    @GetMapping("/getfetchedusers")
+    public List<UserDTO> getFetchedUser(
+            @RequestParam(required = false) String type,
+            @RequestParam(required = false) String age,
+            @RequestParam(required = false) String gender,
+            @RequestParam(required = false) String breed,
+            @RequestParam(required = false) String location) {
+        return userService.getFetchedUser(type, age, gender, breed, location);
+    }
+
+
 }
