@@ -37,7 +37,7 @@ public class UserService {
         }).collect(Collectors.toList());
     }
 
-    public UserDTO saveUser(int id, String name, String type, int age, String gender, String breed, String location, MultipartFile photo) throws IOException {
+    public UserDTO saveUser(int id, String name, String type, String age, String gender, String breed, String location, MultipartFile photo) throws IOException {
         if (!photo.getContentType().startsWith("image")) {
             throw new IllegalArgumentException("Invalid file type. Only images are allowed.");
         }
@@ -56,7 +56,7 @@ public class UserService {
         return modelMapper.map(user, UserDTO.class);
     }
 
-    public UserDTO updateUser(int id, String name, String type, int age, String gender, String breed, String location, MultipartFile photo) throws IOException {
+    public UserDTO updateUser(int id, String name, String type, String age, String gender, String breed, String location, MultipartFile photo) throws IOException {
         Optional<User> existingUserOptional = userRepo.findById(id);
 
         if (existingUserOptional.isPresent()) {
