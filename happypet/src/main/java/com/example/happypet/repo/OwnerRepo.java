@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface OwnerRepo extends JpaRepository<Owner, Integer> {
-    // You can add custom query methods here if needed
+
 }
