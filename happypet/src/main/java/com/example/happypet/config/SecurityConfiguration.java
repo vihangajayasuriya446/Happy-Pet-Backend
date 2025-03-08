@@ -29,10 +29,11 @@ public class SecurityConfiguration {
                 .cors(cors -> cors.configurationSource(corsConfigurationSource())) // Enable CORS
                 .csrf(csrf -> csrf.disable()) // Disable CSRF
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("api/v1/adduser", "api/v1/getusers", "api/auth/register", "api/auth/authenticate", "api/auth/register-admin").permitAll() // Public endpoints
-                        .requestMatchers("/api/admin/**").hasRole("ADMIN")
-                        .requestMatchers("/api/user/**").hasAnyRole("USER", "ADMIN")
-                        .anyRequest().authenticated() // Secure all other requests
+                        .requestMatchers("api/auth/register", "api/auth/authenticate",
+                                "api/auth/register-admin", "api/v1/getusers","api/v1/getfetchedusers",
+                                "api/v1/adduser",
+                                "api/v1/updateuser", "api/v1/deleteuser/{userId}").permitAll() // Public endpoints
+                        .anyRequest().authenticated()
                 )
                 .sessionManagement(session -> session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS) // Stateless sessions
