@@ -36,7 +36,7 @@ public class AuthenticationService {
         user.setRole(Role.USER);
         userRepository.save(user);
         String jwtToken = jwtService.generateToken(user);
-        return new AuthenticationResponse(jwtToken);
+        return new AuthenticationResponse(jwtToken, user.getRole().name());
     }
 
     public AuthenticationResponse authenticate(AuthenticationRequest request) {
@@ -45,7 +45,7 @@ public class AuthenticationService {
         if (existingUser.isPresent()) {
             Users user = existingUser.get();
             String jwtToken = jwtService.generateToken(user);
-            return new AuthenticationResponse(jwtToken);
+            return new AuthenticationResponse(jwtToken, user.getRole().name());
         } else {
             throw new NotFoundException("User does not exist");
         }
