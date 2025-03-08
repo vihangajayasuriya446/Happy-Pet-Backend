@@ -1,5 +1,6 @@
 package com.example.happypet.config;
 
+import com.example.happypet.user.Users;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
@@ -52,7 +53,9 @@ public class JwtService {
 
     // This method is used to generate token with user details only, without adding the extra claims.
     public String generateToken(UserDetails userDetails) {
-        return generateToken(new HashMap<>(), userDetails);
+        Map<String, Object> claims = new HashMap<>();
+        claims.put("role", ((Users) userDetails).getRole().name()); // Add the role claim
+        return generateToken(claims, userDetails); // Pass the claims map to the overloaded method
     }
 
     // This method is used to generate token with user details and extra claims that we want to add to generate the token.
