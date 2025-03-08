@@ -17,4 +17,5 @@ public class AuthenticationResponse implements Serializable {
     @Serial
     private static final long serialVersionUID = 7539048554880289053L;
     private String token;
+    private String role;
 }
