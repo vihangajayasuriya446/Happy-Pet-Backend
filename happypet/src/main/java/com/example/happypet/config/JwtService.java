@@ -9,6 +9,7 @@ import io.jsonwebtoken.security.Keys;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
+
 import java.security.Key;
 import java.util.Date;
 import java.util.HashMap;
@@ -51,12 +52,15 @@ public class JwtService {
         return Keys.hmacShaKeyFor(keyBytes);
     }
 
-    // This method is used to generate token with user details only, without adding the extra claims.
     public String generateToken(UserDetails userDetails) {
         Map<String, Object> claims = new HashMap<>();
-        claims.put("role", ((Users) userDetails).getRole().name()); // Add the role claim
+        Users user = (Users) userDetails; // Cast userDetails to Users
+        claims.put("role", user.getRole().name()); // Add the role claim
+        claims.put("firstName", user.getFirstName()); // Add first name
+        claims.put("lastName", user.getLastName());   // Add last name
         return generateToken(claims, userDetails); // Pass the claims map to the overloaded method
     }
+
 
     // This method is used to generate token with user details and extra claims that we want to add to generate the token.
     public String generateToken(Map<String, Object> extraClaims, UserDetails userDetails) {
