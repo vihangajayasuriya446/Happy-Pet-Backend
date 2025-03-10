@@ -25,7 +25,7 @@ public class UserController {
     public UserDTO saveUser(@RequestParam("id") int id,
                             @RequestParam("name") String name,
                             @RequestParam("type") String type,
-                            @RequestParam("age") int age,
+                            @RequestParam("age") String age,
                             @RequestParam("gender") String gender,
                             @RequestParam("breed") String breed,
                             @RequestParam("location") String location,
@@ -37,7 +37,7 @@ public class UserController {
     public UserDTO updateUser(@RequestParam("id") int id,
                               @RequestParam("name") String name,
                               @RequestParam("type") String type,
-                              @RequestParam("age") int age,
+                              @RequestParam("age") String age,
                               @RequestParam("gender") String gender,
                               @RequestParam("breed") String breed,
                               @RequestParam("location") String location,
@@ -49,5 +49,16 @@ public class UserController {
     public void deleteUser(@PathVariable Integer userId){
         userService.deleteUser(userId);
     }
+
+    @GetMapping("/getfetchedusers")
+    public List<UserDTO> getFetchedUser(
+            @RequestParam(required = false) String type,
+            @RequestParam(required = false) String age,
+            @RequestParam(required = false) String gender,
+            @RequestParam(required = false) String breed,
+            @RequestParam(required = false) String location) {
+        return userService.getFetchedUser(type, age, gender, breed, location);
+    }
+
 
 }

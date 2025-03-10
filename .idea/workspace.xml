@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="35a15113-c308-4a44-8047-cc999fbe2425" name="Changes" comment="Added changes" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Exception" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vihangajayasuriya446&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vihangajayasuriya446/Happy-Pet-Backend.git&quot;,
+    &quot;accountId&quot;: &quot;5986f2d8-d976-418c-b8d6-726d037a2e2b&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2ti3HiIXqoRVUpFrRaw1FNtuVJF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.HappypetApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/matchmaking&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Vihanga Jayasuriya/Desktop/Happy-Pet-Backend/Happy-Pet-Backend/happypet/src/main/java/com/example/happypet&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Vihanga Jayasuriya\Desktop\Happy-Pet-Backend\Happy-Pet-Backend\happypet\src\main\java\com\example\happypet" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="HappypetApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="happypet" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.happypet.HappypetApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="35a15113-c308-4a44-8047-cc999fbe2425" name="Changes" comment="" />
+      <created>1740820984478</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740820984478</updated>
+      <workItem from="1740820986321" duration="3880000" />
+      <workItem from="1740833777574" duration="617000" />
+      <workItem from="1740842671064" duration="1212000" />
+      <workItem from="1741186007426" duration="3000" />
+      <workItem from="1741326257801" duration="7871000" />
+      <workItem from="1741406411107" duration="14839000" />
+      <workItem from="1741494581381" duration="4168000" />
+      <workItem from="1741528675045" duration="2886000" />
+    </task>
+    <task id="LOCAL-00001" summary="Added Spring Security Dependencies">
+      <option name="closed" value="true" />
+      <created>1741327247906</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1741327247906</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added new database">
+      <option name="closed" value="true" />
+      <created>1741327314591</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741327314591</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added auth layer in spring security">
+      <option name="closed" value="true" />
+      <created>1741327388709</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741327388709</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added config layer">
+      <option name="closed" value="true" />
+      <created>1741327519089</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1741327519089</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added demo layer">
+      <option name="closed" value="true" />
+      <created>1741327544198</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1741327544198</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added exception layer">
+      <option name="closed" value="true" />
+      <created>1741327577013</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1741327577013</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added Users">
+      <option name="closed" value="true" />
+      <created>1741327641973</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741327641973</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added Users Repo">
+      <option name="closed" value="true" />
+      <created>1741327681584</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741327681584</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added Users Roles">
+      <option name="closed" value="true" />
+      <created>1741327696404</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741327696404</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Added changes">
+      <option name="closed" value="true" />
+      <created>1741327728039</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741327728039</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added changes to AuthenticationController">
+      <option name="closed" value="true" />
+      <created>1741430143638</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1741430143638</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Added changes to AuthenticationResponse">
+      <option name="closed" value="true" />
+      <created>1741430165220</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1741430165220</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Added changes to AuthenticationService">
+      <option name="closed" value="true" />
+      <created>1741430186968</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1741430186968</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added changes admin details">
+      <option name="closed" value="true" />
+      <created>1741430225294</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1741430225294</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added changes to JwtService">
+      <option name="closed" value="true" />
+      <created>1741430254762</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1741430254762</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Added changes to SecurityConfiguration">
+      <option name="closed" value="true" />
+      <created>1741430276840</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1741430276840</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Added UnauthorizedException">
+      <option name="closed" value="true" />
+      <created>1741430303004</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1741430303004</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added WebConfig">
+      <option name="closed" value="true" />
+      <created>1741430323423</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1741430323423</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Added unversioned files">
+      <option name="closed" value="true" />
+      <created>1741430364975</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1741430364975</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Added endpoints">
+      <option name="closed" value="true" />
+      <created>1741450409335</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1741450409335</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added changes">
+      <option name="closed" value="true" />
+      <created>1741499532036</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1741499532036</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Spring Security Dependencies" />
+    <MESSAGE value="Added new database" />
+    <MESSAGE value="Added auth layer in spring security" />
+    <MESSAGE value="Added config layer" />
+    <MESSAGE value="Added demo layer" />
+    <MESSAGE value="Added exception layer" />
+    <MESSAGE value="Added Users" />
+    <MESSAGE value="Added Users Repo" />
+    <MESSAGE value="Added Users Roles" />
+    <MESSAGE value="Added changes to AuthenticationController" />
+    <MESSAGE value="Added changes to AuthenticationResponse" />
+    <MESSAGE value="Added changes to AuthenticationService" />
+    <MESSAGE value="Added changes admin details" />
+    <MESSAGE value="Added changes to JwtService" />
+    <MESSAGE value="Added changes to SecurityConfiguration" />
+    <MESSAGE value="Added UnauthorizedException" />
+    <MESSAGE value="Added WebConfig" />
+    <MESSAGE value="Added unversioned files" />
+    <MESSAGE value="Added endpoints" />
+    <MESSAGE value="Added changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added changes" />
+  </component>
+</project>
