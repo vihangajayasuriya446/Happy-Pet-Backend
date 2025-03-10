@@ -1,8 +1,8 @@
 package com.example.happypet.service;
 
 
-import com.example.paymentbackend.models.EzCashRequest;
-import com.example.paymentbackend.models.PaymentRequest;
+import com.example.happypet.model.EzCashRequest;
+import com.example.happypet.model.PaymentRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
