@@ -17,7 +17,7 @@ public class User {
     private int id;
     private String name;
     private String type;
-    private int age;
+    private String age;
     private String gender;
     private String breed;
     private String location;
