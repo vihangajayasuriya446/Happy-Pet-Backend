@@ -35,13 +35,13 @@ public class OwnerService {
         return modelMapper.map(owner, OwnerDTO.class);
     }
 
+    // Updated updateOwner method
     public OwnerDTO updateOwner(int id, OwnerDTO ownerDTO) {
         Optional<Owner> existingOwnerOptional = ownerRepo.findById(id);
         if (existingOwnerOptional.isPresent()) {
             Owner existingOwner = existingOwnerOptional.get();
-            existingOwner.setOwnerName(ownerDTO.getOwnerName());
-            existingOwner.setAddress(ownerDTO.getAddress());
-            existingOwner.setContactNumber(ownerDTO.getContactNumber());
+            // Update ONLY the confirmation field
+            existingOwner.setConfirmation(ownerDTO.getConfirmation());
 
             return modelMapper.map(ownerRepo.save(existingOwner), OwnerDTO.class);
         } else {
