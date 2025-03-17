@@ -4,7 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35a15113-c308-4a44-8047-cc999fbe2425" name="Changes" comment="Added changes" />
+    <list default="true" id="35a15113-c308-4a44-8047-cc999fbe2425" name="Changes" comment="Added changes">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/53288d1b-f103-45ad-b7a8-34aeca725bd6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/53288d1b-f103-45ad-b7a8-34aeca725bd6/storage_v2/_src_/schema/happypetsystem1.w7DrNg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/53288d1b-f103-45ad-b7a8-34aeca725bd6/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/53288d1b-f103-45ad-b7a8-34aeca725bd6/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/53288d1b-f103-45ad-b7a8-34aeca725bd6/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/53288d1b-f103-45ad-b7a8-34aeca725bd6/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85b6841d-4d77-4767-89e8-cdb278464ea1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85b6841d-4d77-4767-89e8-cdb278464ea1/storage_v2/_src_/schema/happypetsystem.LvVytw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85b6841d-4d77-4767-89e8-cdb278464ea1/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85b6841d-4d77-4767-89e8-cdb278464ea1/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85b6841d-4d77-4767-89e8-cdb278464ea1/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/85b6841d-4d77-4767-89e8-cdb278464ea1/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3b6d1d7-8633-4a54-a13c-2c856de6558c.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3b6d1d7-8633-4a54-a13c-2c856de6558c/storage_v2/_src_/schema/happypet-system.fbkOtg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3b6d1d7-8633-4a54-a13c-2c856de6558c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3b6d1d7-8633-4a54-a13c-2c856de6558c/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3b6d1d7-8633-4a54-a13c-2c856de6558c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/c3b6d1d7-8633-4a54-a13c-2c856de6558c/storage_v2/_src_/schema/sys.zb4BAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/happypet/src/main/java/com/example/happypet/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/happypet/src/main/java/com/example/happypet/config/SecurityConfiguration.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +73,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;Spring Boot.HappypetApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/matchmaking&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/matchmaking-m3&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Vihanga Jayasuriya/Desktop/Happy-Pet-Backend/Happy-Pet-Backend/happypet/src/main/java/com/example/happypet&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -105,6 +127,9 @@
       <workItem from="1741406411107" duration="14839000" />
       <workItem from="1741494581381" duration="4168000" />
       <workItem from="1741528675045" duration="2886000" />
+      <workItem from="1741861728291" duration="19000" />
+      <workItem from="1741922642667" duration="28000" />
+      <workItem from="1741922758142" duration="18000" />
     </task>
     <task id="LOCAL-00001" summary="Added Spring Security Dependencies">
       <option name="closed" value="true" />
