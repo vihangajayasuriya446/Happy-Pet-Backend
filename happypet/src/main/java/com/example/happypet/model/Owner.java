@@ -19,5 +19,6 @@ public class Owner {
     private String ownerName;
     private String address;
     private String contactNumber;
-    // Add other relevant fields as needed
+    private int petId;
+    private String confirmation;
 }
