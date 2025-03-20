@@ -30,9 +30,13 @@ public class SecurityConfiguration {
                 .csrf(csrf -> csrf.disable()) // Disable CSRF
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("api/auth/register", "api/auth/authenticate",
-                                "api/auth/register-admin", "api/v1/getusers","api/v1/getfetchedusers",
-                                "api/v1/adduser",
-                                "api/v1/updateuser", "api/v1/deleteuser/{userId}").permitAll() // Public endpoints
+                                "api/auth/register-admin", "api/v1/getusers",
+                                "api/v1/updateowner/{id}").permitAll() // Public endpoints
+                        .requestMatchers("api/v1/getfetchedusers","api/v1/addowner").hasAnyRole("USER", "ADMIN") // Allow both USER and ADMIN
+                        .requestMatchers("/api/v1/adduser","api/v1/adduser",
+                                "api/v1/updateuser", "api/v1/deleteuser/{userId}", "api/v1/getowners",
+                                "api/v1/deleteowner/{ownerId}" ).hasRole("ADMIN") // Only ADMIN can access these
+
                         .anyRequest().authenticated()
                 )
                 .sessionManagement(session -> session
