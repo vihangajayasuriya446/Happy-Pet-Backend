@@ -1,10 +1,10 @@
-package com.example.happypet;
+package com.example.HappyPetApplication;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class HappypetApplicationTests {
+class HappyPetApplicationTests {
 
 	@Test
 	void contextLoads() {
