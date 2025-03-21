@@ -31,7 +31,14 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("api/auth/register", "api/auth/authenticate",
                                 "api/auth/register-admin", "api/v1/getusers",
-                                "api/v1/updateowner/{id}").permitAll() // Public endpoints
+                                "api/v1/updateowner/{id}",
+                                "api/v1/gets","api/v1/addpet","api/v1/uploadTest","api/v1/updatepet",
+                                "api/v1/deletepet/{id}",
+                                "api/v1/adoptions/{id}","api/v1/adoptions/pet/{petId}","api/v1/adoptions/submit","api/v1/adoptions/update/{id}",
+                                "api/v1/adoptions/delete/{id}","api/v1/pets/available",
+                                "api/v1/pets/{id}",
+                                "api/v1/pets/{id}/image"
+                                ).permitAll() // Public endpoints
                         .requestMatchers("api/v1/getfetchedusers","api/v1/addowner").hasAnyRole("USER", "ADMIN") // Allow both USER and ADMIN
                         .requestMatchers("/api/v1/adduser","api/v1/adduser",
                                 "api/v1/updateuser", "api/v1/deleteuser/{userId}", "api/v1/getowners",
