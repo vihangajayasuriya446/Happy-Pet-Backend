@@ -35,9 +35,9 @@ public class SecurityConfiguration {
                                 "api/v1/gets","api/v1/addpet","api/v1/uploadTest","api/v1/updatepet",
                                 "api/v1/deletepet/{id}",
                                 "api/v1/adoptions/{id}","api/v1/adoptions/pet/{petId}","api/v1/adoptions/submit","api/v1/adoptions/update/{id}",
-                                "api/v1/adoptions/delete/{id}","api/v1/pets/available",
-                                "api/v1/pets/{id}",
-                                "api/v1/pets/{id}/image"
+                                "api/v1/adoptions/delete/{id}","api/pets/available",
+                                "api/pets/{id}","api/v1/adoptions",
+                                "api/pets/{id}/image", "/images/**", "/uploads/**"
                                 ).permitAll() // Public endpoints
                         .requestMatchers("api/v1/getfetchedusers","api/v1/addowner").hasAnyRole("USER", "ADMIN") // Allow both USER and ADMIN
                         .requestMatchers("/api/v1/adduser","api/v1/adduser",
