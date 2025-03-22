@@ -37,7 +37,7 @@ public class SecurityConfiguration {
                                 "api/v1/inquiries/{id}", "api/v1/inquiries/{id}/status",
                                 "api/v1/inquiries/email/{email}", "api/v1/inquiries/pet/{petId}",
                                 "api/v1/inquiries/admin/dashboard/raw", "api/v1/inquiries/admin/dashboard",
-                                "api/v1/inquiries/create",
+                                "api/v1/inquiries/create", "api/v1/pets/images/**",
 
                                 // Contact Inquiry Controller Endpoints
                                 "api/v1/contact-inquiries", "api/v1/contact-inquiries/{id}",
@@ -48,7 +48,7 @@ public class SecurityConfiguration {
                                 "api/v1/cart/add", "api/v1/cart/update/{cartId}", "api/v1/cart/remove/{cartId}",
 
                                 // Pet Controller Endpoints
-                                "api/v1/pets", "api/v1/pets/{id}", "api/v1/pets/category/{category}",
+                                "api/v1/pets", "api/v1/pets/{id}", "api/v1/pets/category/{category}", "/images/**",
                                 "api/v1/pets/add", "api/v1/pets/update/{id}", "api/v1/pets/delete/{id}","/api/vi/pets/images/{fileName}"//
                         ).permitAll() // Public endpoints
                         .requestMatchers("api/v1/getfetchedusers","api/v1/addowner").hasAnyRole("USER", "ADMIN") // Allow both USER and ADMIN
