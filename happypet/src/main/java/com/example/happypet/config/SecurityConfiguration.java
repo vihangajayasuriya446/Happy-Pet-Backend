@@ -37,7 +37,28 @@ public class SecurityConfiguration {
                                 "api/v1/adoptions/{id}","api/v1/adoptions/pet/{petId}","api/v1/adoptions/submit","api/v1/adoptions/update/{id}",
                                 "api/v1/adoptions/delete/{id}","api/pets/available",
                                 "api/pets/{id}","api/v1/adoptions",
-                                "api/pets/{id}/image", "/images/**", "/uploads/**"
+                                "api/pets/{id}/image", "/images/**", "/uploads/**", "api/v1/pets/images/**",
+
+
+                                // Pet Inquiry Controller Endpoints
+                                "api/v1/inquiries", "api/v1/inquiries/{id}", "api/v1/inquiries",
+                                "api/v1/inquiries/{id}", "api/v1/inquiries/{id}/status",
+                                "api/v1/inquiries/email/{email}", "api/v1/inquiries/pet/{petId}",
+                                "api/v1/inquiries/admin/dashboard/raw", "api/v1/inquiries/admin/dashboard",
+                                "api/v1/inquiries/create",
+
+                                // Contact Inquiry Controller Endpoints
+                                "api/v1/contact-inquiries", "api/v1/contact-inquiries/{id}",
+                                "api/v1/contact-inquiries/email/{email}", "api/v1/contact-inquiries/create",
+
+                                // Cart Controller Endpoints
+                                "api/v1/cart", "api/v1/cart/{cartId}", "api/v1/cart/user/{userId}",
+                                "api/v1/cart/add", "api/v1/cart/update/{cartId}", "api/v1/cart/remove/{cartId}",
+
+                                // Pet Controller Endpoints
+                                "api/v1/pets", "api/v1/pets/{id}", "api/v1/pets/category/{category}",
+                                "api/v1/pets/add", "api/v1/pets/update/{id}", "api/v1/pets/delete/{id}","/api/vi/pets/images/{fileName}",//
+                                "/default-pet-image.jpg","/images/"
                                 ).permitAll() // Public endpoints
                         .requestMatchers("api/v1/getfetchedusers","api/v1/addowner").hasAnyRole("USER", "ADMIN") // Allow both USER and ADMIN
                         .requestMatchers("/api/v1/adduser","api/v1/adduser",
