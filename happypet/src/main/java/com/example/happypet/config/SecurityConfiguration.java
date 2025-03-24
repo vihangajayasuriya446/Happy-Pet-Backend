@@ -60,8 +60,8 @@ public class SecurityConfiguration {
                                 // Pet Controller Endpoints
                                 "api/v1/pets", "api/v1/pets/{id}", "api/v1/pets/category/{category}",
                                 "api/v1/pets/add", "api/v1/pets/update/{id}", "api/v1/pets/delete/{id}","/api/vi/pets/images/{fileName}",//
-                                "/default-pet-image.jpg","/images/"
-                                ).permitAll() // Public endpoints
+                                "/default-pet-image.jpg","/images/","api/v1/payment/card", "api/v1/payment/ezcash", "api/v1/payment/get-balance"
+                        ).permitAll() // Public endpoints
                         .requestMatchers("api/v1/getfetchedusers","api/v1/addowner").hasAnyRole("USER", "ADMIN") // Allow both USER and ADMIN
                         .requestMatchers("/api/v1/adduser","api/v1/adduser",
                                 "api/v1/updateuser", "api/v1/deleteuser/{userId}", "api/v1/getowners",
