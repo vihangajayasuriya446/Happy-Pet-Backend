@@ -6,11 +6,13 @@ import com.example.happypet.model.PaymentRequest;
 import com.example.happypet.service.PaymentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.example.happypet.model.Payment;
 
+import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/payment")
+@RequestMapping("/api/v1/payment")
 public class PaymentController {
     private final PaymentService paymentService;
 
@@ -32,4 +34,6 @@ public class PaymentController {
     public ResponseEntity<String> processEzCashPayment(@RequestBody EzCashRequest request) {
         return paymentService.processEzCashPayment(request);
     }
+
+
 }

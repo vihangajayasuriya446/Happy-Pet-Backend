@@ -37,7 +37,7 @@ public class UserService {
         }).collect(Collectors.toList());
     }
 
-    public UserDTO saveUser(int id, String name, String type, int age, String gender, String breed, String location, MultipartFile photo) throws IOException {
+    public UserDTO saveUser(int id, String name, String type, String age, String gender, String breed, String location, MultipartFile photo) throws IOException {
         if (!photo.getContentType().startsWith("image")) {
             throw new IllegalArgumentException("Invalid file type. Only images are allowed.");
         }
@@ -56,7 +56,7 @@ public class UserService {
         return modelMapper.map(user, UserDTO.class);
     }
 
-    public UserDTO updateUser(int id, String name, String type, int age, String gender, String breed, String location, MultipartFile photo) throws IOException {
+    public UserDTO updateUser(int id, String name, String type, String age, String gender, String breed, String location, MultipartFile photo) throws IOException {
         Optional<User> existingUserOptional = userRepo.findById(id);
 
         if (existingUserOptional.isPresent()) {
@@ -88,5 +88,24 @@ public class UserService {
     public String deleteUser(Integer userId){
         userRepo.deleteById(userId);
         return "User successfully deleted";
+    }
+
+    public List<UserDTO> getFetchedUser(String type, String age, String gender, String breed, String location) {
+        List<User> users = userRepo.findAll();
+
+        return users.stream()
+                .filter(user -> (type == null || type.isEmpty() || user.getType().equalsIgnoreCase(type)) &&
+                        (age == null || age.isEmpty() || user.getAge().equalsIgnoreCase(age)) &&
+                        (gender == null || gender.isEmpty() || user.getGender().equalsIgnoreCase(gender)) &&
+                        (breed == null || breed.isEmpty() || user.getBreed().toLowerCase().contains(breed.toLowerCase())) &&
+                        (location == null || location.isEmpty() || user.getLocation().equalsIgnoreCase(location)))
+                .map(user -> {
+                    UserDTO userDTO = modelMapper.map(user, UserDTO.class);
+                    if (user.getPhoto() != null) {
+                        userDTO.setPhoto(Base64.getEncoder().encodeToString(user.getPhoto()));
+                    }
+                    return userDTO;
+                })
+                .collect(Collectors.toList());
     }
 }
