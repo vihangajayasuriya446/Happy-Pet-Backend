@@ -39,7 +39,7 @@ public class SecurityConfiguration {
                                 "api/pets/{id}","api/v1/adoptions",
                                 "api/pets/{id}/image", "/images/**", "/uploads/**", "api/v1/pets/images/**",
                                 "api/v1/cart/add/**", "api/v1/inquiries/**", "/api/contact/submit","/api/contact/responses",
-                                "/api/contact/delete/*",
+                                "/api/contact/delete/*","/api/v1/pets/3",
 
 
                                 // Pet Inquiry Controller Endpoints
