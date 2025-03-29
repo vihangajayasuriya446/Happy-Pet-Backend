@@ -8,7 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -21,9 +23,10 @@ public class PaymentService {
     public PaymentService(PaymentRepository paymentRepository) {
         this.paymentRepository = paymentRepository;
         // Initialize EZ Cash user balances
-        userBalances.put("0712345678", 500000.0);
+        userBalances.put("0712345678", 100.0);
         userBalances.put("0723456789", 50.0);
-        userBalances.put("0715545274", 500.0);
+        userBalances.put("5555555555", 5000.0);
+        userBalances.put("1111111111", 1000.0);
     }
 
     // Process Card Payment & Save to MySQL
@@ -37,6 +40,7 @@ public class PaymentService {
         payment.setAmount(request.getAmount());
         payment.setPhoneNumber("N/A"); // Not applicable for card payments
         payment.setPaymentMethod("Card");
+        payment.setPaymentDate(LocalDateTime.now());
 
         paymentRepository.save(payment);
 
@@ -64,9 +68,16 @@ public class PaymentService {
         payment.setAmount(request.getAmount());
         payment.setPhoneNumber(request.getPhone());
         payment.setPaymentMethod("EZ Cash");
+        payment.setPaymentDate(LocalDateTime.now());
 
         paymentRepository.save(payment);
 
         return ResponseEntity.ok("EZ Cash payment of $" + request.getAmount() + " successful");
     }
+
+    public ResponseEntity<List<Payment>> getPayments() {
+        List<Payment> payments = paymentRepository.findAll();
+        return ResponseEntity.ok(payments);
+    }
+
 }

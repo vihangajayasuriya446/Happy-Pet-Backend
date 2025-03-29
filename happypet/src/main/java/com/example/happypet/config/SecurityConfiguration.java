@@ -31,7 +31,40 @@ public class SecurityConfiguration {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("api/auth/register", "api/auth/authenticate",
                                 "api/auth/register-admin", "api/v1/getusers",
-                                "api/v1/updateowner/{id}").permitAll() // Public endpoints
+                                "api/v1/updateowner/{id}",
+                                "api/v1/gets","api/v1/addpet","api/v1/uploadTest","api/v1/updatepet",
+                                "api/v1/deletepet/{id}",
+                                "api/v1/adoptions/{id}","api/v1/adoptions/pet/{petId}","api/v1/adoptions/submit","api/v1/adoptions/update/{id}",
+                                "api/v1/adoptions/delete/{id}","api/pets/available",
+                                "api/pets/{id}","api/v1/adoptions",
+                                "api/pets/{id}/image", "/images/**", "/uploads/**", "api/v1/pets/images/**",
+                                "api/v1/cart/add/**", "api/v1/inquiries/**", "/api/contact/submit","/api/contact/responses",
+                                "/api/contact/delete/*","/api/v1/pets/3",
+
+
+                                // Pet Inquiry Controller Endpoints
+                                "api/v1/inquiries", "api/v1/inquiries/{id}", "api/v1/inquiries",
+                                "api/v1/inquiries/{id}", "api/v1/inquiries/{id}/status",
+                                "api/v1/inquiries/email/{email}", "api/v1/inquiries/pet/{petId}",
+                                "api/v1/inquiries/admin/dashboard/raw", "api/v1/inquiries/admin/dashboard",
+                                "api/v1/inquiries/create",
+
+                                // Contact Inquiry Controller Endpoints
+                                "api/v1/contact-inquiries", "api/v1/contact-inquiries/{id}",
+                                "api/v1/contact-inquiries/email/{email}", "api/v1/contact-inquiries/create",
+
+                                // Cart Controller Endpoints
+                                "api/v1/cart", "api/v1/cart/{cartId}", "api/v1/cart/user/{userId}",
+                                "api/v1/cart/add", "api/v1/cart/update/{cartId}", "api/v1/cart/remove/{cartId}",
+
+                                // Pet Controller Endpoints
+                                "api/v1/pets", "api/v1/pets/{id}", "api/v1/pets/category/{category}",
+                                "api/v1/pets/add", "api/v1/pets/update/{id}", "api/v1/pets/delete/{id}","/api/v1/pets/images/{fileName}",//
+                                "/default-pet-image.jpg","/images/", "api/v1/pets/{id}/buy" ,
+
+                                // Payments service endpoints
+                                "api/v1/payment/card", "api/v1/payment/ezcash", "api/v1/payment/get-balance" , "api/v1/payment/get-payments"
+                        ).permitAll() // Public endpoints
                         .requestMatchers("api/v1/getfetchedusers","api/v1/addowner").hasAnyRole("USER", "ADMIN") // Allow both USER and ADMIN
                         .requestMatchers("/api/v1/adduser","api/v1/adduser",
                                 "api/v1/updateuser", "api/v1/deleteuser/{userId}", "api/v1/getowners",
@@ -51,7 +84,7 @@ public class SecurityConfiguration {
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(List.of("http://localhost:5173"));
-        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS" , "PATCH"));
         configuration.setAllowedHeaders(List.of("*"));
         configuration.setAllowCredentials(true);
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();

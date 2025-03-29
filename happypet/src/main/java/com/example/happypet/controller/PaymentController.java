@@ -35,5 +35,8 @@ public class PaymentController {
         return paymentService.processEzCashPayment(request);
     }
 
-
+    @GetMapping("/get-payments")
+    public ResponseEntity<List<Payment>> getPayments() {
+        return paymentService.getPayments();
+    }
 }
