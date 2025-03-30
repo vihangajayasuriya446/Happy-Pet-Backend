@@ -35,4 +35,15 @@ public class ContactFormController {
         contactFormService.deleteContactForm(id);
         return ResponseEntity.noContent().build();
     }
+
+    @PutMapping("/update-status/{id}") // Using PUT for similar REST semantics
+    public ResponseEntity<ContactFormDTO> updateContactFormStatus(
+            @PathVariable Long id,
+            @RequestBody ContactFormDTO contactFormDTO) {
+        ContactFormDTO updatedContactForm = contactFormService.updateContactFormStatus(id, contactFormDTO);
+        if (updatedContactForm != null) {
+            return ResponseEntity.ok(updatedContactForm);
+        }
+        return ResponseEntity.notFound().build();
+    }
 }

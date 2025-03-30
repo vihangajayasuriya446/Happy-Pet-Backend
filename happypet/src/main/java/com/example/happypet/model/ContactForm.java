@@ -23,4 +23,8 @@ public class ContactForm {
 
     @Column(nullable = false, length = 1000)
     private String message;
+
+    @Column // You can specify length if needed
+    private String status;
+
 }

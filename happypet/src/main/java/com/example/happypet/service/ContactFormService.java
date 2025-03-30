@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -38,4 +39,16 @@ public class ContactFormService {
     public void deleteContactForm(Long id) {
         contactFormRepository.deleteById(id);
     }
+
+    public ContactFormDTO updateContactFormStatus(Long id, ContactFormDTO contactFormDTO) {
+        Optional<ContactForm> existingFormOptional = contactFormRepository.findById(id);
+        if (existingFormOptional.isPresent()) {
+            ContactForm existingForm = existingFormOptional.get();
+            existingForm.setStatus(contactFormDTO.getStatus());
+            return modelMapper.map(contactFormRepository.save(existingForm), ContactFormDTO.class);
+        } else {
+            throw new RuntimeException("Contact form with ID " + id + " not found.");
+        }
+    }
+
 }
