@@ -20,7 +20,14 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
+      - name: Cache Maven dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('happypet/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2-
+
       - name: Build and Test
         run: |
-          cd happypet  # Change to your subdirectory
-          mvn -B package
+          cd happypet
+          mvn -B verify
