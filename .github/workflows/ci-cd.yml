@@ -2,7 +2,7 @@ name: CI Pipeline
 
 on:
   push:
-    branches: [ "main" ] # Or your main branch name
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -17,11 +17,11 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          java-version: '17' # Replace with your project's Java version
+          java-version: '17'
           distribution: 'temurin' 
 
       - name: Build with Maven 
-        run: mvn -B package --file pom.xml 
+        run: mvn -B package
 
       - name: Run Tests
-        run: mvn -B test --file pom.xml 
+        run: mvn -B test
