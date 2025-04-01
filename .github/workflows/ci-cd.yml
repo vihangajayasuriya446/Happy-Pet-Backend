@@ -31,5 +31,6 @@ jobs:
           registry: docker.io
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          dockerfile: happypet/Dockerfile  # Explicit path to Dockerfile
-          tag: latest  # Use 'tag' instead of 'tags'
+          directory: happypet  # Build context is now happypet directory
+          dockerfile: happypet/Dockerfile
+          tag: latest
