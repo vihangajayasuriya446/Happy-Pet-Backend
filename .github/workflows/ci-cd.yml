@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: Java CI with Maven and Docker
 
 on:
   push:
@@ -7,27 +7,27 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build-and-test:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    - uses: actions/checkout@v3
 
-      - name: Set up Java
-        uses: actions/setup-java@v3
-        with:
-          java-version: '17'
-          distribution: 'temurin'
+    - name: Set up JDK 17
+      uses: actions/setup-java@v3
+      with:
+        java-version: '17'
+        distribution: 'temurin'
 
-      - name: Cache Maven dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-m2-${{ hashFiles('happypet/pom.xml') }}
-          restore-keys: ${{ runner.os }}-m2-
+    - name: Build with Maven
+      run: |
+        cd happypet
+        mvn -B package
 
-      - name: Build and Test
-        run: |
-          cd happypet
-          mvn -B verify
+    - name: Build and Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v4
+      with:
+        image: vihangajayasuriya446/happypet
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
