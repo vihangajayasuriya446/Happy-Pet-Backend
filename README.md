@@ -1,4 +1,7 @@
 # 🐾 Happy Pet Backend
+**Team Project | Full-Stack Web Application | React, Spring Boot, MySQL, AWS, CI/CD**
+
+---
 
 ## 📌 Project Overview
 **Happy Pet** is a full-stack web platform built to facilitate **ethical pet adoption, purchasing, and matchmaking** while promoting **animal welfare**.  
