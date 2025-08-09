@@ -5,9 +5,9 @@
 This backend, developed using **Spring Boot**, provides secure **RESTful APIs** to connect adopters, breeders, and shelters through a **role-based access system**.
 
 The system manages:
-- 🐶 Pets (adoption & purchasing)
+- 🐶 Pets (adoption, matchmaking & purchasing)
 - 🧑‍🤝‍🧑 Users (adopters, breeders, shelters, admins)
-- 📩 Inquiries (adoption, pet, contact)
+- 📩 Inquiries (pet adoption, pet buy, pet matchmaking, contact)
 - 📊 Admin dashboard insights
 
 ---
